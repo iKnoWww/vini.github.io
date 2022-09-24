@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- chamada do idioma pt-br -->
+    <meta charset="UTF-8">
+    <!-- chamada do css do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- site responsivo à tela do celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- chamada do css -->
+    <link href="style.scss" type="text/css" rel="stylesheet">
+
+    <title> Cadastro na Inovar </title>
+
+</head>
+
+<body>
+    <?php include 'header.php'; ?>
+
+    <br><br><br><br><br>
+    <h3 style="margin-left: 25vw;"> Cadastro </h3>
+    <form style="margin-left: 25vw;" class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label"> Email </label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-3">
+            <label for="inputPassword4" class="form-label"> Senha </label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-6">
+            <label for="inputAddress" class="form-label"> Endereço </label>
+            <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <div class="col-md-3">
+            <label for="inputCity" class="form-label"> Cidade </label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label"> Estado </label>
+            <select id="inputState" class="form-select">
+                <option selected> Distrito Federal </option>
+                <option> Mato Grosso</option>
+                <option> Mato Grosso do Sul </option>
+                <option> Minas Gerais </option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="inputZip" class="form-label"> CEP </label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+            <a href="cadastroSucesso.php">
+                <button type="submit" class="btn btn-primary"> Cadastrar </button>
+            </a>
+        </div>
+    </form>
+
+
+
+
+
+    <?php include 'footer.php'; ?>
+    <!-- chamada do javascript pelo server do bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

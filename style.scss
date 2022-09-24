@@ -1,0 +1,29 @@
+.header .navbar {
+    background-color: #000;
+    color: #fff;
+    max-height: 100px;
+}
+
+.footer .navbar {
+    background-color: #000;
+    max-height: 100px;
+}
+
+.header .nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#logo {
+    width: 40px;
+}
+
+.footer .navbar p {
+    text-align: center;
+    /* deixa centralizado na página */
+    width: 100%;
+    color: white;
+}

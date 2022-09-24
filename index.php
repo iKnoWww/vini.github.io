@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- chamada do idioma pt-br -->
+	<meta charset="UTF-8">
+	<!-- chamada do css do bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<!-- site responsivo à tela do celular -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- chamada do css -->
+	<link href="style.scss" type="text/css" rel="stylesheet">
+
+	<title> Inovar </title>
+</head>
+
+<body>
+	<?php include 'header.php'; ?>
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="casa0.webp" class="d-block w-100" alt="lar0">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Agendamento!</h5>
+					<p>Agende conosco via email para uma visita da Inovar! </p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="casa1.jpg" class="d-block w-100" alt="lar1">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Ideias!</h5>
+					<p>Muitas opções para deixar a sua residência com a sua cara.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="casa2.jpg" class="d-block w-100" alt="lar2">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Inovação!</h5>
+					<p>Seu lar com um toque único.</p>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Anterior</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Próximo</span>
+		</button>
+	</div>
+
+	<?php include 'footer.php'; ?>
+	<!-- chamada do javascript pelo server do bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
